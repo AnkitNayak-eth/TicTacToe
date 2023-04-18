@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(/Images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav {
+    color:purple;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5vw;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px purple,
+      0 0 82px purple,
+      0 0 92px purple,
+      0 0 102px purple,
+      0 0 151px purple;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container {
+    color: purple;
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.box {
+    display: flex;
+    border: 5px solid purple;
+    border-radius: 30px;
+    margin: 3px;
+    font-size: 4vw;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+}
+
+.box:hover {
+    background-color: rgb(232,139,183);
+    border: 5px solid rgb(205, 255, 130);
+}
+
+.gameInfo {
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 5px;
+    font-family: 'Press Start 2P', cursive;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.info {
+    margin: 0.5vw;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+    margin-right: 100px;
+}
+
+.imgbox1 img {
+    width: 0;
+    transition: width 1s ease-in-out;
+    margin-left: 100px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    width: 120px;
+    background-color: purple;
+    padding: 10px 10px;
+    border: 0.5px solid purple;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 18px 18px;
+    transition: 0.5s ease-out;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: pink;
+    transform: scale(1.1);
+    border: 0.5px solid pink;
+}
+
+@media screen and (max-width: 900px) {
+    .gameInfo {
+        display: flex;
+        flex-direction: column;
+        margin: 60px;
+        padding: 10px;
+        font-family: 'Press Start 2P', cursive;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    nav {
+        color:purple;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1rem;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px purple,
+          0 0 82px purple,
+          0 0 92px purple,
+          0 0 102px purple,
+          0 0 151px purple;
+    }
+
+    .gameContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(3, 25vw);
+        grid-template-columns: repeat(3, 25vw);
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .imgbox img {
+        display: none;
+    }
+    
+    .imgbox1 img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gameInfo {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        padding: 10px;
+        font-family: 'Press Start 2P', cursive;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    nav {
+        color:purple;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1rem;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px purple,
+          0 0 82px purple,
+          0 0 92px purple,
+          0 0 102px purple,
+          0 0 151px purple;
+    }
+
+    .gameContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(3, 27vw);
+        grid-template-columns: repeat(3, 27vw);
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .imgbox img {
+        display: none;
+    }
+    
+    .imgbox1 img {
+        display: none;
+    }
+}
